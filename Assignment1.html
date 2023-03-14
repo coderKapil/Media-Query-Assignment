@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query Assignment</title>
+    <style>
+     .container{
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        background-color: aquamarine;
+        border-radius: 50px;
+        height: 50vh;
+        width: 50%;
+        margin: 23px auto;
+     }
+     .container h1{
+        text-align: center;
+     }
+     @media screen and (max-width:1440px){
+        .container{
+            background-color: green;
+        }
+     }
+     @media screen and (min-width:768px)and (max-width:1240px){
+        .container{
+            background-color: #bf9900;
+        }
+     }
+     @media screen and (min-width:425px)and (max-width:768px){
+        .container{
+            background-color: aqua;
+        }
+     }
+     @media screen and (max-width:425px){
+        .container{
+            background-color: #ea2e2e;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is Media Query Demo Page.</h1>
+    </div>
+</body>
+</html>
